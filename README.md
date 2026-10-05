@@ -13,20 +13,38 @@ Welcome to the official release hub for **Spodify** — a modern, fast, and ligh
 
 👉 **[Download Spodify v1.0.1 APK (Latest)](https://github.com/xauravww/spodify-releases/releases/download/v1.0.1/spodify-release.apk)**
 
-> 💡 **Auto-Updates:** Spodify comes with a built-in auto-updater. Once installed, future updates will be notified directly inside the app with seamless 1-tap installation!
+> 💡 **Built-In Auto-Updater:** Spodify comes with a built-in auto-updater. Once installed, future updates will be notified directly inside the app with seamless 1-tap background downloading and installation!
 
 ---
 
-## ✨ Key Features
+## 📱 App Feature Showcase
 
-- 🎧 **Studio Master 320 kbps Streaming:** Direct lossless-grade 320 kbps AAC/MP4 audio with crystal clear highs and deep, punchy bass.
+| Home Discovery | Streaming Partners | In-App Updater | Now Playing |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/feature_home.png" width="200" alt="Home Screen" /> | <img src="screenshots/feature_streaming_partners.png" width="200" alt="Streaming Partners" /> | <img src="screenshots/feature_updater.png" width="200" alt="In-App Updater" /> | <img src="screenshots/feature_now_playing.png" width="200" alt="Now Playing Screen" /> |
+
+| Synchronized Lyrics | Hardware Equalizer | Audio Visualizer | Live Queue |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/feature_lyrics.png" width="200" alt="Synchronized Lyrics" /> | <img src="screenshots/feature_equalizer.png" width="200" alt="Hardware Equalizer" /> | <img src="screenshots/feature_visualizer_settings.png" width="200" alt="Audio Visualizer" /> | <img src="screenshots/feature_queue.png" width="200" alt="Queue Management" /> |
+
+| Universal Search | Spotify Sync | Library Hub | Offline Downloads |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/feature_search.png" width="200" alt="Search Screen" /> | <img src="screenshots/feature_spotify_sync.png" width="200" alt="Spotify Sync" /> | <img src="screenshots/feature_library.png" width="200" alt="User Library" /> | <img src="screenshots/feature_downloads.png" width="200" alt="Offline Downloads" /> |
+
+---
+
+## ✨ Key Features & Architecture
+
+- 🎧 **Studio Master 320 kbps Streaming:** Direct lossless-grade 320 kbps progressive audio with crystal clear highs and deep, punchy bass.
 - ⚡ **Multi-Source Streaming & Prioritization:** Choose your preferred primary streaming partner in Settings (*Studio Master 320k*, *Spotify Match*, or *Universal Catalog*).
 - 🛡️ **Smart Failover Guarantee:** If a track or rare remix is missing on your primary partner, Spodify instantly streams it from the next partner with zero silence or lag.
 - 🚫 **100% Cookie-Free:** No browser extensions, no cookie copying, and no setup hassle. High quality works straight out of the box.
 - ♾️ **No 56s/60s Audio Cutoff:** Fully uncapped progressive streaming ensures songs play smoothly from start to finish.
 - 🎚️ **Hardware Equalizer:** 10-band DSP equalizer with bit-perfect bypass, bass boost, and audiophile sound presets.
-- 📥 **Offline Downloads:** Save your favorite songs directly to your device for offline playback.
-- 🔄 **Spotify Sync:** Sync your public and private Spotify playlists seamlessly.
+- 🎤 **Synchronized Karaoke Lyrics:** Millisecond-accurate word-by-word dynamic lyrics with tap-to-seek playback.
+- 🌊 **60 FPS Audio Visualizer:** Real-time frequency bars, neon waveforms, radial pulse, and customizable glow accents.
+- 📥 **Offline Downloads:** Save your favorite songs directly to your device for offline playback with zero expiration dates.
+- 🔄 **Spotify Sync:** Sync your public and private Spotify playlists seamlessly without requiring Spotify Premium credentials.
 
 ---
 
