@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B-blue?style=for-the-badge)](https://github.com/xauravww/spodify-releases/releases/latest)
 [![License](https://img.shields.io/badge/Status-Actively%20Maintained-success?style=for-the-badge)](#-why-is-the-source-repository-private)
 
-Spodify is an advanced, privacy-first Android music streaming client built with a native architecture. It delivers true **Studio Master 320 kbps** audio fidelity, multi-partner streaming failover, hardware DSP frequency tuning, real-time synchronized karaoke lyrics, and a built-in auto-updater — completely free of ads, subscriptions, and telemetry.
+Spodify is an advanced, privacy-first Android music streaming client built with native performance. It delivers true **Studio Master 320 kbps** audio fidelity, multi-partner streaming failover, hardware DSP frequency tuning, real-time synchronized karaoke lyrics, interactive lockscreen controls, and a built-in auto-updater — completely free of ads, subscriptions, and telemetry.
 
 ---
 
@@ -18,7 +18,7 @@ Spodify is an advanced, privacy-first Android music streaming client built with 
 
 👉 **[Direct Download: spodify-release.apk (v1.0.1)](https://github.com/xauravww/spodify-releases/releases/download/v1.0.1/spodify-release.apk)**
 
-> 💡 **Seamless In-App Updates:** You only need to manually install the APK once. Every subsequent update is detected automatically by the built-in updater, allowing 1-tap downloads and installation directly inside the app.
+> 💡 **Seamless In-App Updates:** You only need to manually install the APK once. Future updates are detected automatically by the built-in updater, enabling 1-tap background downloading and installation directly inside the app.
 
 ---
 
@@ -40,59 +40,73 @@ Below is a direct tour of Spodify's core interface, captured from live playback 
 
 ---
 
-## 🚀 In-Depth Feature Breakdown
+## 🚀 Complete Feature Breakdown
 
 ### 1. 🎧 Studio Master Streaming & Multi-Partner Engine
 - **User-Selectable Engine**: Configure your prioritized streaming source under **Settings → Preferred Streaming Partner**:
   - **Studio Master (320 kbps)**: Highest fidelity progressive stream. Delivers rich dynamic range, uncompressed acoustic depth, punchy sub-bass, and crystal-clear high frequencies.
   - **Spotify Match**: 1:1 catalog matching based directly on Spotify track metadata, bypassing trackers and regional restrictions.
-  - **Universal Catalog**: Maximum catalog coverage with 100M+ songs, covers, Indian regional music, and live performances.
+  - **Universal Catalog**: Maximum catalog coverage with 100M+ songs, covers, regional music, and live performances.
 - **Smart Failover Guarantee**: If a mirror encounters network latency, slow CDN response, or a missing regional track, Spodify's engine transparently fails over to the next mirror within milliseconds. You will never experience a stalled buffer or silence.
-- **Permanent 56s/60s Cutoff Resolution**: Unlike naive streaming bots that stall at 56s due to chunk rate limits, Spodify incorporates progressive chunk streaming with zero cutoff timeouts.
+- **Permanent 56s/60s Cutoff Resolution**: Progressive chunk streaming engine eliminates playback stalls and timeout issues completely.
 - **100% Zero-Cookie Architecture**: No browser extensions, no cookie exports, and no expiring tokens. High-bitrate streaming works out of the box.
 
-### 2. 🎚️ 10-Band Hardware DSP Equalizer
+### 2. 📍 Zero-Tracking Location-Based Feed Suggestions
+- **Smart On-Device Regional Feed**: The Home feed automatically displays trending music, national charts, and regional shelves (e.g. *India's Biggest Hits*, *Punjabi Hits*, *Bollywood Trending*) matching your country.
+- **100% Private**: Resolved cleanly on-device without GPS permissions, without location tracking, and without third-party geo-IP APIs.
+
+### 3. 📻 Smart Autoplay & Endless Radio
+- **Continuous Listening**: When your active playlist, album, or queue reaches the end, Spodify dynamically seeds acoustically similar tracks and keeps the music playing smoothly.
+- **User Configurable**: Toggle Autoplay on or off anytime in Settings according to your personal preference.
+
+### 4. 🎤 Synchronized Karaoke Lyrics with Intelligent Fallbacks
+- **Millisecond-Accurate Dynamic Tracking**: Real-time karaoke lyrics scroll dynamically with vocal phrasing and high-visibility active line highlighting.
+- **Interactive Tap-to-Seek**: Tap any lyric line in the window to instantly jump audio playback to that exact timestamp.
+- **Smart Drift Detection & Multi-Tier Fallbacks**:
+  - Validates track runtime against lyric timestamps (±4s). If an audio edit (like a live version or sped-up remix) drifts, Spodify automatically switches to a clean scrollable lyric sheet instead of faking misaligned karaoke animations.
+  - Multi-tier provider search with secondary lyrics sources.
+  - Graceful clean notice with one-tap retry if no lyrics exist for rare indie tracks.
+- **Offline SQLite Lyric Caching**: Fetched lyrics are saved locally for instant retrieval on repeat listens.
+
+### 5. 🎚️ 10-Band Hardware DSP Equalizer
 - **Direct Hardware Signal Processing**: Connects directly to Android's low-level audio output engine for latency-free real-time acoustic shaping.
 - **10 Discrete Frequency Bands**: Fine-tune specific frequencies from deep sub-bass to air harmonics:
   `31 Hz` • `62 Hz` • `125 Hz` • `250 Hz` • `500 Hz` • `1 kHz` • `2 kHz` • `4 kHz` • `8 kHz` • `16 kHz` with ±12 dB precision control.
 - **Bit-Perfect Audiophile Bypass Switch**: Enable pure direct output to disable all DSP processing and hear the untouched studio master recording.
 - **Acoustic Presets**: Quick-switch presets for **Flat (Bit-Perfect)**, **Bass Booster**, **Acoustic**, **Vocal Enhancer**, and **Custom**.
 
-### 3. 🎤 Real-Time Synchronized Karaoke Lyrics
-- **Millisecond-Accurate Dynamic Lyrics**: Lyrics scroll dynamically with the artist's vocals in real time with high-visibility line tracking.
-- **Interactive Tap-to-Seek**: Tap any lyric line (past or upcoming) to jump playback immediately to that exact timestamp.
-- **Local Lyric Caching**: Once fetched, lyrics are saved locally for instant retrieval during offline or repeat listening.
+### 6. 📱 Lockscreen & Notification Media System
+- **Direct Lockscreen & Notification Heart Action**: Like or unlike the currently playing track straight from your Android notification shade or lockscreen without unlocking your phone or opening the app.
+- **Android 13+ MediaStyle Support**: Complete with an interactive seekbar, high-resolution artwork, and responsive playback controls.
+- **Uninterrupted Background Playback**: Employs network wake locks (`C.WAKE_MODE_NETWORK`) so music never drops when your screen turns off or your phone enters deep sleep.
+- **Headphone & Bluetooth Smart Pause**: Automatically pauses music when headphones are disconnected or Bluetooth shuts off.
+- **Clean Pause-on-Kill**: Swiping the app out of Android Recent Tasks cleanly stops playback instead of lingering in the background.
 
-### 4. 🌊 60 FPS Real-Time Audio Visualizer
+### 7. 🌊 60 FPS Real-Time Audio Visualizer
 - **Fluid Waveform Synthesis**: Renders smooth audio visualizers directly above playback controls with zero frame drops.
-- **Multiple Visual Styles**:
-  - **Equalizer Bars**: Classic multi-channel frequency spectrum bars.
-  - **Neon Waveform**: Liquid oscillating neon wave.
-  - **Radial Pulse**: Dynamic expanding acoustic pulse.
-  - **Peak Spectrum**: High-contrast audio energy visualizer.
-- **Color Accents**: Choose from Spotify Neon Green, Cyberpunk Amber, Electric Violet, or Neon Cyan.
+- **4 Visual Styles**: Equalizer Bars, Neon Waveform, Radial Pulse, and Peak Spectrum.
+- **Custom Glow Themes**: Choose from Spotify Neon Green, Cyberpunk Amber, Electric Violet, or Neon Cyan.
 
-### 5. 🔍 Universal Search & Discovery Explorer
-- **Real-Time Query Completion**: Fast predictive search across tracks, artists, albums, and playlists.
-- **Genre & Mood Explorer**: Dedicated visual tiles for Bollywood, Punjabi, Hip-Hop, Pop, Indie, Chill, Rock, and Workout.
-- **Search Memory**: Quick-access chip shortcuts to re-run recent search queries instantly.
+### 8. 🌙 Built-in Sleep Timer
+- **Bedtime Listening**: Set a sleep timer (`5`, `10`, `15`, `30`, or `60` minutes) directly from the player's 3-dots menu.
+- **Smooth Fade**: Playback pauses cleanly when the timer expires to protect your battery and sleep.
 
-### 6. 🔄 Spotify Sync & Direct URL Importer
+### 9. 📦 1-Tap Collection Bulk Actions
+- **Bulk Download**: Download every song in any album or playlist with a single tap for offline listening.
+- **Bulk Save to Library**: Bookmark entire collections into your personal library instantly.
+
+### 10. 🔄 Spotify Sync & Direct URL Importer
 - **1-Tap URL Importer**: Paste any public Spotify playlist, track, or album link (`open.spotify.com/...`) to instantly resolve and match all songs with lossless audio.
-- **Account Sync**: Sync your public or private Spotify playlists and liked tracks without requiring a Spotify Premium subscription or developer API credentials.
+- **Account Sync**: Sync your public or private Spotify playlists and liked tracks without requiring Spotify Premium credentials or developer keys.
 
-### 7. 💾 Permanent Offline Downloads
-- **Zero Expiration**: Downloaded tracks are stored locally on your device with no time limits or periodic online check-in requirements.
+### 11. 💾 Permanent Offline Downloads & JSON Library Backup
+- **Zero Expiration**: Downloaded tracks are stored locally on your device with no expiration locks or periodic online check-in requirements.
 - **Embedded Metadata & High-Res Art**: Downloads automatically embed ID3 tags, artist names, album titles, and high-resolution album covers.
-- **Integrated Download Manager**: Manage downloaded storage, play entirely offline in Airplane mode, and shuffle downloaded libraries.
+- **JSON Library Backup & Restore**: Export and import your entire library (playlists, liked tracks, custom order) as a single portable `.json` file across devices.
 
-### 8. 📋 Live Session Queue & Continuous Radio
-- **Up Next Management**: Review upcoming tracks, reorder positions, or swipe to remove songs from the active queue.
-- **Infinite Radio Mode**: Spodify dynamically queues acoustically similar tracks once your selected playlist ends, ensuring non-stop music.
-
-### 9. 📲 In-App Auto-Updater
+### 12. 📲 In-App Auto-Updater
 - **Instant Version Discovery**: Automatically checks for new updates on launch using decentralized fallbacks.
-- **Changelog Dialog**: Read detailed release notes and feature improvements before deciding to update.
+- **In-App Changelog Dialog**: Read detailed release notes and feature improvements before deciding to update.
 - **1-Tap Direct Install**: Downloads the verified APK package directly within the app and triggers the native Android package installer. No Play Store or third-party stores needed.
 
 ---
