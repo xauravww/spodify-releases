@@ -1,6 +1,6 @@
 {
-  "version": "1.0.1",
-  "versionCode": 2,
-  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.0.1/spodify-release.apk",
-  "changelog": "• Studio Master 320 kbps Streaming: True 320 kbps lossless acoustics with crystal clear sound.\n• Multi-Source Prioritization: Customize your preferred streaming partner in Settings with smart failover.\n• Fixed 56s/60s Audio Cutoff: Completely resolved the playback stoppage bug for uninterrupted listening.\n• 100% Cookie-Free Streaming: Enjoy maximum audio quality without needing any browser extensions or cookies.\n• Seamless In-App Updates: Instant update notifications with fast 1-tap installation."
+  "version": "1.0.2",
+  "versionCode": 3,
+  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.0.2/spodify-release.apk",
+  "changelog": "• Playback Fix on Affected Devices: resolved songs refusing to start on certain phones, where the track errored out the moment it was tapped.\n• Equalizer Pipeline Fix: the EQ's audio pipeline no longer trips a buffer error when the equalizer is switched off.\n• Leaner Playback: audio-only tracks no longer start a video decoder."
 }
