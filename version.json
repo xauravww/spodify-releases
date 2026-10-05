@@ -1,1 +1,6 @@
-{"version":"1.0.1","versionCode":2,"downloadUrl":"https://github.com/xauravww/spodify-releases/releases/download/v1.0.0/spodify-release.apk","changelog":"• Ultra-fast jsDelivr update system\n• Studio quality Opus 160kbps audio\n• Smooth YouTube streaming"}
+{
+  "version": "1.0.1",
+  "versionCode": 2,
+  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.0.1/spodify-release.apk",
+  "changelog": "• Studio Master 320 kbps Streaming: True 320 kbps lossless acoustics with crystal clear sound.\n• Multi-Source Prioritization: Customize your preferred streaming partner in Settings with smart failover.\n• Fixed 56s/60s Audio Cutoff: Completely resolved the playback stoppage bug for uninterrupted listening.\n• 100% Cookie-Free Streaming: Enjoy maximum audio quality without needing any browser extensions or cookies.\n• Seamless In-App Updates: Instant update notifications with fast 1-tap installation."
+}
