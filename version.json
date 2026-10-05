@@ -1,6 +1,6 @@
 {
-  "version": "1.0.2",
-  "versionCode": 3,
-  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.0.2/spodify-release.apk",
-  "changelog": "• Playback Fix on Affected Devices: resolved songs refusing to start on certain phones, where the track errored out the moment it was tapped.\n• Equalizer Pipeline Fix: the EQ's audio pipeline no longer trips a buffer error when the equalizer is switched off.\n• Leaner Playback: audio-only tracks no longer start a video decoder."
+  "version": "1.0.3",
+  "versionCode": 4,
+  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.0.3/spodify-release.apk",
+  "changelog": "• Optional anonymous usage statistics, with an off switch in Settings → Privacy. No account, no name, no email, no advertising ID, no device serial, no location, and no IP address stored.\n• Network hardening: unencrypted HTTP is now refused everywhere except the in-app playback server running on your own device at 127.0.0.1.\n• Removed two hardcoded fallback backends. One was already returning errors for every request.\n• Update screen now shows the full list of changes, and Settings shows what's new in the version you're running."
 }
