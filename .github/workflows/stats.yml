@@ -1,0 +1,46 @@
+name: Release stats
+
+# GitHub exposes only a running download total per asset and no history, so a
+# daily snapshot is the only free way to get a trend. The job records counts
+# into stats/downloads.json and refreshes the stats block in README.md.
+#
+# Costs nothing: this repository is public, and GitHub Actions minutes are
+# unmetered for public repositories.
+
+on:
+  schedule:
+    # 03:17 UTC — off the hour, when GitHub's scheduler is least congested.
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-stats
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Snapshot download counts
+        env:
+          # Authenticated so the run isn't subject to the 60/hour anonymous
+          # rate limit, and so traffic endpoints stay reachable.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update-stats.py
+
+      - name: Commit changes
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats/downloads.json README.md
+          git commit -m "chore(stats): daily download snapshot"
+          git push

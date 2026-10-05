@@ -1,0 +1,36 @@
+{
+  "history": [
+    {
+      "date": "2026-10-05",
+      "total": 10,
+      "v1.0.2": 7,
+      "v1.0.1": 1,
+      "v1.0.0": 2
+    }
+  ],
+  "updated": "2026-10-05T17:39:33Z",
+  "total": 10,
+  "releases": [
+    {
+      "tag": "v1.0.2",
+      "published": "2026-10-05",
+      "downloads": 7,
+      "size": 29141555,
+      "prerelease": false
+    },
+    {
+      "tag": "v1.0.1",
+      "published": "2026-10-05",
+      "downloads": 1,
+      "size": 29141555,
+      "prerelease": false
+    },
+    {
+      "tag": "v1.0.0",
+      "published": "2026-10-05",
+      "downloads": 2,
+      "size": 29073782,
+      "prerelease": false
+    }
+  ]
+}

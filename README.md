@@ -1,6 +1,7 @@
 # 🎵 Spodify — The High-Fidelity Music Experience for Android
 
 [![Latest Release](https://img.shields.io/github/v/release/xauravww/spodify-releases?color=1DB954&label=Latest%20Version&style=for-the-badge)](https://github.com/xauravww/spodify-releases/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/xauravww/spodify-releases/total?color=1DB954&label=Downloads&style=for-the-badge&cacheSeconds=300)](https://github.com/xauravww/spodify-releases/releases)
 [![Free](https://img.shields.io/badge/Price-100%25%20Free-1ED760?style=for-the-badge)](#-100-free-policy--scam-warning)
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-Clean%20(0%20Detections)-brightgreen?style=for-the-badge)](#-security--virustotal-verification)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B-blue?style=for-the-badge)](https://github.com/xauravww/spodify-releases/releases/latest)
@@ -19,6 +20,28 @@ Spodify is an advanced, privacy-first Android music streaming client built with 
 👉 **[Direct Download: spodify-release.apk (v1.0.2)](https://github.com/xauravww/spodify-releases/releases/download/v1.0.2/spodify-release.apk)**
 
 > 💡 **Seamless In-App Updates:** You only need to manually install the APK once. Future updates are detected automatically by the built-in updater, enabling 1-tap background downloading and installation directly inside the app.
+
+---
+
+## 📊 Downloads & Release Stats
+
+<!-- STATS:START -->
+| Version | Published | Downloads | Share |
+| :--- | :--- | ---: | ---: |
+| **v1.0.2** | 2026-10-05 | 7 | 70% |
+| v1.0.1 | 2026-10-05 | 1 | 10% |
+| v1.0.0 | 2026-10-05 | 2 | 20% |
+| **Total** | | **10** | |
+
+**10 downloads** across 3 releases — updated 2026-10-05.
+<!-- STATS:END -->
+
+> These counts come from GitHub's public release API and are refreshed daily by
+> a scheduled workflow. A "download" is a fetch of the APK file, not a unique
+> person: re-installs, mirrors, and automated pulls are all counted, and the
+> APK keeps no identifier that could tell them apart. For active users and
+> crashes, the app sends optional anonymous statistics — see
+> [Privacy & Transparency](#️-privacy--transparency).
 
 ---
 
@@ -162,9 +185,9 @@ Get-FileHash spodify-release.apk -Algorithm SHA256
 
 ## 🕵️ Privacy & Transparency
 
-- **Zero Tracking & Analytics**: No analytics SDKs, no behavioral tracking, and no user profiling.
+- **No Third-Party Analytics**: No analytics SDKs, no ad trackers, no session recording, no user profiling. Usage statistics go to the developer's own endpoint, never to a third party.
 - **No Account Required**: Start listening immediately with zero login screens or email requirements.
-- **Zero Personal Data Collected**: The developer does not collect, log, or have access to any user identity or personal data.
+- **Anonymous Usage Statistics (optional, can be turned off)**: To know how many people actually use Spodify and which crashes to fix, the app sends one anonymous report per session. It contains a random install ID, the app version, device model, Android version, chipset, and how long the session lasted and had audio playing. It contains **no** account, no name, no email, no advertising ID, no device serial, no location, no listening history, and no IP address. Country is derived from the connection at the endpoint and the IP itself is never stored. Turn it off any time in **Settings → Privacy**, and nothing is sent at all — including crash reports.
 - **No Exploits**: Operates cleanly on-device utilizing public media standards. All settings and playlists remain entirely on your own device.
 
 ---
