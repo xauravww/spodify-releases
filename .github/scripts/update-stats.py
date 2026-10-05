@@ -17,6 +17,7 @@ import datetime
 import json
 import os
 import pathlib
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -33,11 +34,17 @@ END = "<!-- STATS:END -->"
 # keeps the diff readable.
 MAX_HISTORY = 730
 
+# Safety net only. The release count would have to pass 10,000 before this
+# bites, and an unbounded walk of rel="next" is worse than a bounded one.
+MAX_PAGES = 100
 
-def api(path: str):
-    """GET a GitHub REST path, unauthenticated unless GITHUB_TOKEN is set."""
+NEXT_LINK = re.compile(r'<([^>]+)>;\s*rel="next"')
+
+
+def request(url: str) -> urllib.request.Request:
+    """A GitHub REST request, unauthenticated unless GITHUB_TOKEN is set."""
     req = urllib.request.Request(
-        f"https://api.github.com/repos/{REPO}/{path}",
+        url,
         headers={
             "Accept": "application/vnd.github+json",
             "User-Agent": "spodify-stats",
@@ -46,14 +53,32 @@ def api(path: str):
     token = os.environ.get("GITHUB_TOKEN")
     if token:
         req.add_header("Authorization", f"Bearer {token}")
-    with urllib.request.urlopen(req, timeout=30) as res:
-        return json.load(res)
+    return req
+
+
+def paginate(path: str):
+    """Yield every item across all pages, following GitHub's rel="next" links.
+
+    The single per_page=100 page this used to fetch truncates silently past 100
+    releases. That would drop the oldest releases from the README table and —
+    worse — leave `total` a sum over only the newest 100, so the Total row and
+    every share percentage would be quietly wrong while the shields.io badge,
+    which reads GitHub's real all-time figure, disagreed with them.
+    """
+    url = f"https://api.github.com/repos/{REPO}/{path}"
+    for _ in range(MAX_PAGES):
+        with urllib.request.urlopen(request(url), timeout=30) as res:
+            yield from json.load(res)
+            match = NEXT_LINK.search(res.headers.get("Link", ""))
+            if not match:
+                return
+            url = match.group(1)
 
 
 def collect():
     """Current per-release download counts, newest release first."""
     releases = []
-    for rel in api("releases?per_page=100"):
+    for rel in paginate("releases?per_page=100"):
         if rel.get("draft"):
             continue
         releases.append(
