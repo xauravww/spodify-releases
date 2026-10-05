@@ -3,14 +3,22 @@
     {
       "date": "2026-10-05",
       "total": 10,
+      "v1.0.3": 0,
       "v1.0.2": 7,
       "v1.0.1": 1,
       "v1.0.0": 2
     }
   ],
-  "updated": "2026-10-05T17:39:33Z",
+  "updated": "2026-10-05T19:08:42Z",
   "total": 10,
   "releases": [
+    {
+      "tag": "v1.0.3",
+      "published": "2026-10-05",
+      "downloads": 0,
+      "size": 29158915,
+      "prerelease": false
+    },
     {
       "tag": "v1.0.2",
       "published": "2026-10-05",
