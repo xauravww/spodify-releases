@@ -15,9 +15,9 @@ Spodify is an advanced, privacy-first Android music streaming client built with 
 
 | Release | Version | Build | Package | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Latest** | **v1.0.3** | 4 | `spodify-release.apk` | 🟢 Stable / Recommended |
+| **Latest** | **v1.1.0** | 5 | `spodify-release.apk` | 🟢 Stable / Recommended |
 
-👉 **[Direct Download: spodify-release.apk (v1.0.3)](https://github.com/xauravww/spodify-releases/releases/download/v1.0.3/spodify-release.apk)**
+👉 **[Direct Download: spodify-release.apk (v1.1.0)](https://github.com/xauravww/spodify-releases/releases/download/v1.1.0/spodify-release.apk)**
 
 > 💡 **Seamless In-App Updates:** You only need to manually install the APK once. Future updates are detected automatically by the built-in updater, enabling 1-tap background downloading and installation directly inside the app.
 
@@ -79,7 +79,10 @@ Below is a direct tour of Spodify's core interface, captured from live playback 
 - **Smart On-Device Regional Feed**: The Home feed automatically displays trending music, national charts, and regional shelves (e.g. *India's Biggest Hits*, *Punjabi Hits*, *Bollywood Trending*) matching your country.
 - **100% Private**: Resolved cleanly on-device without GPS permissions, without location tracking, and without third-party geo-IP APIs.
 
-### 3. 📻 Smart Autoplay & Endless Radio
+### 3. 📻 Spodify Radio, Smart Autoplay & Endless Listening
+- **Spodify Radio**: A block on Home that builds a queue from your own listening history, then keeps refilling it as it plays, so the radio never runs out mid-song.
+- **Tune It**: Narrow the radio with a language, a mood, an era, or how much of it should be new versus familiar. Every setting is optional, and leaving them all alone still works.
+- **Blocklist**: Any artist you never want to hear again is blocked from its own screen, with search, a filter and paging, so the list can grow with you.
 - **Continuous Listening**: When your active playlist, album, or queue reaches the end, Spodify dynamically seeds acoustically similar tracks and keeps the music playing smoothly.
 - **User Configurable**: Toggle Autoplay on or off anytime in Settings according to your personal preference.
 
@@ -166,11 +169,11 @@ Every official APK release is compiled from a clean source environment and scann
 | :--- | :--- |
 | **Package Name** | `com.spodify` |
 | **Release File** | `spodify-release.apk` |
-| **Version** | `v1.0.3` (Build 4) |
+| **Version** | `v1.1.0` (Build 5) |
 | **Target Architecture** | Universal Android (ARM64, ARMv7, x86_64) |
 | **Minimum Android** | Android 8.0+ (Oreo) |
-| **SHA-256 Checksum** | `e58e0909feb90ab41473dc7bfaea9e8664dfb3fd3f27e68f8786447dfa547804` |
-| **VirusTotal Report** | [🔍 View VirusTotal Scan Results](https://www.virustotal.com/gui/file/e58e0909feb90ab41473dc7bfaea9e8664dfb3fd3f27e68f8786447dfa547804) |
+| **SHA-256 Checksum** | `d5481e376672d8d01754d259f78c1decc9d26a9b533cd87401aa27cff56aef2a` |
+| **VirusTotal Report** | [🔍 View VirusTotal Scan Results](https://www.virustotal.com/gui/file/d5481e376672d8d01754d259f78c1decc9d26a9b533cd87401aa27cff56aef2a) |
 
 ### Checksum Verification
 You can verify the integrity of the downloaded APK file in your terminal:

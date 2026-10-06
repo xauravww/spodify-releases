@@ -1,6 +1,6 @@
 {
-  "version": "1.0.3",
-  "versionCode": 4,
-  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.0.3/spodify-release.apk",
-  "changelog": "• Optional anonymous usage statistics, with an off switch in Settings → Privacy. No account, no name, no email, no advertising ID, no device serial, no location, and no IP address stored.\n• Network hardening: unencrypted HTTP is now refused everywhere except the in-app playback server running on your own device at 127.0.0.1.\n• Removed two hardcoded fallback backends. One was already returning errors for every request.\n• Update screen now shows the full list of changes, and Settings shows what's new in the version you're running."
+  "version": "1.1.0",
+  "versionCode": 5,
+  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.1.0/spodify-release.apk",
+  "changelog": "• Spodify Radio: a block on Home that builds a queue from what you listen to, and keeps adding songs as it plays instead of running out.\n• Tune the radio with a language, a mood, an era, or how much of it should be new. Every one of them is optional, and none of them is required for the radio to work.\n• Blocked artists have their own screen now, with search, a filter and paging, so one block is not the last one you can add.\n• Radio is visible while it plays: a RADIO badge in the mini player, in the full player, and on the queue it keeps filling.\n• Tapping the radio block no longer restarts the queue under you. Its button pauses and resumes like every other player in the app."
 }
