@@ -174,6 +174,7 @@ Every official APK release is compiled from a clean source environment and scann
 | **Minimum Android** | Android 8.0+ (Oreo) |
 | **SHA-256 Checksum** | `d5481e376672d8d01754d259f78c1decc9d26a9b533cd87401aa27cff56aef2a` |
 | **VirusTotal Report** | [🔍 View VirusTotal Scan Results](https://www.virustotal.com/gui/file/d5481e376672d8d01754d259f78c1decc9d26a9b533cd87401aa27cff56aef2a) |
+| **Detection Ratio** | `0` malicious, `0` suspicious across 75 engines (scanned 2026-10-06) |
 
 ### Checksum Verification
 You can verify the integrity of the downloaded APK file in your terminal:
