@@ -7,29 +7,37 @@
       "v1.0.2": 7,
       "v1.0.1": 1,
       "v1.0.0": 2
+    },
+    {
+      "date": "2026-10-06",
+      "total": 22,
+      "v1.0.3": 9,
+      "v1.0.2": 9,
+      "v1.0.1": 2,
+      "v1.0.0": 2
     }
   ],
-  "updated": "2026-10-05T19:17:21Z",
-  "total": 10,
+  "updated": "2026-10-06T10:15:49Z",
+  "total": 22,
   "releases": [
     {
       "tag": "v1.0.3",
       "published": "2026-10-05",
-      "downloads": 0,
+      "downloads": 9,
       "size": 29158915,
       "prerelease": false
     },
     {
       "tag": "v1.0.2",
       "published": "2026-10-05",
-      "downloads": 7,
+      "downloads": 9,
       "size": 29141555,
       "prerelease": false
     },
     {
       "tag": "v1.0.1",
       "published": "2026-10-05",
-      "downloads": 1,
+      "downloads": 2,
       "size": 29141555,
       "prerelease": false
     },

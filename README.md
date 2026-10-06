@@ -28,13 +28,13 @@ Spodify is an advanced, privacy-first Android music streaming client built with 
 <!-- STATS:START -->
 | Version | Published | Downloads | Share |
 | :--- | :--- | ---: | ---: |
-| **v1.0.3** | 2026-10-05 | 0 | 0% |
-| v1.0.2 | 2026-10-05 | 7 | 70% |
-| v1.0.1 | 2026-10-05 | 1 | 10% |
-| v1.0.0 | 2026-10-05 | 2 | 20% |
-| **Total** | | **10** | |
+| **v1.0.3** | 2026-10-05 | 9 | 41% |
+| v1.0.2 | 2026-10-05 | 9 | 41% |
+| v1.0.1 | 2026-10-05 | 2 | 9% |
+| v1.0.0 | 2026-10-05 | 2 | 9% |
+| **Total** | | **22** | |
 
-**10 downloads** across 4 releases — updated 2026-10-05.
+**22 downloads** across 4 releases — updated 2026-10-06.
 <!-- STATS:END -->
 
 > These counts come from GitHub's public release API and are refreshed daily by
