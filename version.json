@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "versionCode": 5,
-  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.1.0/spodify-release.apk",
-  "changelog": "• Spodify Radio: a block on Home that builds a queue from what you listen to, and keeps adding songs as it plays instead of running out.\n• Tune the radio with a language, a mood, an era, or how much of it should be new. Every one of them is optional, and none of them is required for the radio to work.\n• Blocked artists have their own screen now, with search, a filter and paging, so one block is not the last one you can add.\n• Radio is visible while it plays: a RADIO badge in the mini player, in the full player, and on the queue it keeps filling.\n• Tapping the radio block no longer restarts the queue under you. Its button pauses and resumes like every other player in the app."
+  "version": "1.2.0",
+  "versionCode": 6,
+  "downloadUrl": "https://github.com/xauravww/spodify-releases/releases/download/v1.2.0/spodify-release.apk",
+  "changelog": "• Custom App Icons: Choose between Emerald, Dark Minimalist, Gold Luxury, Neon Cyberpunk, or Crimson Passion.\n• Bitrate & Audio Badge: High-fidelity audio quality badge now active by default across mini-player and full-screen player.\n• Audio Focus Management: Smooth audio ducking and auto-pause when incoming calls, navigation, or other apps play audio.\n• Bluetooth Auto-Resume: Automatically resume playback when reconnecting to car audio or Bluetooth headphones.\n• Network Stall Protection: Option to auto-skip unplayable songs on slow/interrupted network connections.\n• Clean Spotify-style Playlist Management: Cleaner tracklist layout with dedicated reorder/edit mode.\n• Anonymous Feedback & Diagnostics: Send bug reports or suggestions with optional screenshots directly from Settings."
 }

@@ -15,9 +15,9 @@ Spodify is an advanced, privacy-first Android music streaming client built with 
 
 | Release | Version | Build | Package | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Latest** | **v1.1.0** | 5 | `spodify-release.apk` | 🟢 Stable / Recommended |
+| **Latest** | **v1.2.0** | 6 | `spodify-release.apk` | 🟢 Stable / Recommended |
 
-👉 **[Direct Download: spodify-release.apk (v1.1.0)](https://github.com/xauravww/spodify-releases/releases/download/v1.1.0/spodify-release.apk)**
+👉 **[Direct Download: spodify-release.apk (v1.2.0)](https://github.com/xauravww/spodify-releases/releases/download/v1.2.0/spodify-release.apk)**
 
 > 💡 **Seamless In-App Updates:** You only need to manually install the APK once. Future updates are detected automatically by the built-in updater, enabling 1-tap background downloading and installation directly inside the app.
 
@@ -170,10 +170,10 @@ Every official APK release is compiled from a clean source environment and scann
 | :--- | :--- |
 | **Package Name** | `com.spodify` |
 | **Release File** | `spodify-release.apk` |
-| **Version** | `v1.1.0` (Build 5) |
+| **Version** | `v1.2.0` (Build 6) |
 | **Target Architecture** | Universal Android (ARM64, ARMv7, x86_64) |
 | **Minimum Android** | Android 8.0+ (Oreo) |
-| **SHA-256 Checksum** | `d5481e376672d8d01754d259f78c1decc9d26a9b533cd87401aa27cff56aef2a` |
+| **SHA-256 Checksum** | `19e76de7b1df84b0b4444dc54dae3d1ad8c64008bd36881aa7163636395b6457` |
 | **VirusTotal Report** | [🔍 View VirusTotal Scan Results](https://www.virustotal.com/gui/file/d5481e376672d8d01754d259f78c1decc9d26a9b533cd87401aa27cff56aef2a) |
 | **Detection Ratio** | `0` malicious, `0` suspicious across 75 engines (scanned 2026-10-06) |
 
