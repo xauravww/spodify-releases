@@ -36,7 +36,7 @@ Spodify is an advanced, privacy-first Android music streaming client built with 
 | v1.0.0 | 2026-10-05 | 2 | 3% |
 | **Total** | | **73** | |
 
-**73 downloads** across 6 releases · +26 in the last 7 days — updated 2026-10-15.
+**73 downloads** across 6 releases · +23 in the last 7 days — updated 2026-10-16.
 <!-- STATS:END -->
 
 > These counts come from GitHub's public release API and are refreshed daily by
